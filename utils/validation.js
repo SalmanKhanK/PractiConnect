@@ -7,6 +7,7 @@ const userDetailsValidation = Joi.object({
     bio: Joi.string().max(1000),
     profile_picture: Joi.string().max(1000),
     gender: Joi.string().valid('male', 'female', 'other'),
+    cover_picture: Joi.string().max(1000),
 
 });
 
